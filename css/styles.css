@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* Header */
+
+.menu {
+	transition: all .1s ease-in-out;
+}
+
+header {
+	background-image: linear-gradient(rgba(84, 93, 220, .9), rgba(96, 171, 245, .9)), url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.contenedor {
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+p.logo {
+	color: white;
+	font-size: 25px;
+	transition: all .3s ease-in-out;
+}
+
+div.contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+nav ul li {
+	list-style: none;
+	margin-right: 15px;
+}
+
+nav ul li a {
+	color: white;
+}
+
+#flex-t {
+	display: flex;
+	justify-content: center;
+	margin: 18vh auto;
+}
+
+.contenedor-titulo {
+	text-align: center;
+}
+
+.contenedor-titulo h1 {
+	font-size: 60px;
+	color: white;
+	margin: 0;
+}
+
+.contenedor-titulo h2 {
+	font-size: 25px;
+	color: white;
+}
+
+.btn {
+	font-size: 14px;
+	color: white;
+	background-color: #5cb8ff;
+	padding: 14px 24px;
+	display: inline-block;
+	border-radius: 10px;
+	border: none;
+}
+
+/* Sobre mi */
+
+h3.h3 {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 3rem auto;
+	font-size: 55px;
+	font-weight: normal;
+}
+
+.sobre-mi .contenedor-sobre-mi {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.sobre-mi .texto {
+	width: 42%;
+}
+
+/* Servicios */
+
+.contenedor-servicios {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.servicio {
+	width: 30%;
+	height: 29rem;
+	padding: 34px 30px 38px 30px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	position: relative;
+	color: white;
+}
+
+.waves {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.icono {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.servicio h4 {
+	font-size: 30px;
+	margin: 0;
+}
+
+.servicio p {
+	margin-bottom: 20px;
+	height: 194px;
+}
+
+.contenedor-servicios .violeta {
+	background-image: linear-gradient(to top, #5055df, #6d68f3);
+	box-shadow: 0 12px 30px 0 rgb(80, 85, 222, .37);
+}
+
+.contenedor-servicios .celeste {
+	background-image: linear-gradient(to top, #40a8f9, #5cb8ff);
+	box-shadow: 0 12px 30px 0 rgb(86, 163, 222, .3);
+}
+
+/* Mis trabajos */
+
+button.owl-prev, button.owl-next {
+	font-size: 40px !important;
+}
+
+.owl-carousel .item:hover, .logo:hover {
+	transform: scale(1.2, 1.2) !important;
+}
+
+.owl-carousel .item {
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+span {
+	color: #71bcfa;
+}
+
+/* Trabajar conmigo */
+
+.contenedor-trabajar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.contenedor-trabajar .item {
+	width: 28%;
+	text-align: center;
+}
+
+.contenedor-trabajar ul li:nth-child(2) {
+	font-weight: bold;
+	font-size: 19px;
+	margin: 5px 0 20px 0;
+}
+
+.contenedor-trabajar ul li:nth-child(3) {
+	line-height: 31px;
+}
+
+/* Blog */
+
+.blog {
+	background-color: #F9FAFC;
+}
+
+.publicaciones {
+	display: flex;
+	justify-content: space-around;
+}
+
+.publicacion {
+	width: 30%;
+	box-shadow: 1px 1px 14px #ccc;
+}
+
+.publicacion img {
+	width: 100%;
+}
+
+.publicacion .contenido {
+	background-color: white;
+	padding: 20px;
+}
+
+.publicacion .contenido h4 {
+	font-size: 23px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.publicacion .contenido p {
+	color: #5A6169;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+/* Banner */
+
+.banner {
+	background-image: linear-gradient(rgba(84, 93, 220, .94), rgba(96, 171, 245, .9));
+	padding: 50px 0;
+	margin-top: 40px;
+}
+
+.banner-contenedor {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.banner-contenedor h3 {
+	font-size: 23px;
+	color: white;
+}
+
+/* Contacto */
+
+.contacto form {
+	width: 77%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+input[type="text"], input[type="email"] {
+	width: 49%;
+	margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+	padding: 18px 0;
+	border: none;
+	border-bottom: 1px solid #5cb8ff;
+	outline: none;
+	font-size: 17px;
+}
+
+textarea {
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	display: block;
+	margin: 0 auto !important;
+}
+
+/* Footer */
+
+footer {
+	margin-top: 40px;
+	background-color: #2F2F2F;
+	padding: 40px 0;
+	text-align: center;
+}
+
+footer .contenedor {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.redes img {
+	margin: 0 40px;
+	transform: rotate(0);
+	transition: .4s;
+}
+
+.redes img:hover {
+	transform: rotate(360deg);
+	transition: .4s;
+}
+
+.parrafo p {
+	color: white;
+	margin-top: 40px;
+}
+
+.whatsapp {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+}
+
+#sobre-mi,
+#servicios,
+#mis-trabajos,
+#porque-trabajar,
+#blog,
+#contacto {
+	padding: 90px 0;
+}
